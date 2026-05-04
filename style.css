@@ -1,0 +1,179 @@
+/* 
+   PROJECT: INIT_DAULAT STYLE SHEET
+   FONT: JetBrains Mono
+   ESTETIKA: Terminal / Monospace / Professional
+*/
+
+/* Konfigurasi Pembolehubah (Root Variables) */
+:root {
+    --bg-dark: #0d1117;        /* Warna latar belakang (GitHub Dark) */
+    --bg-code: #161b22;       /* Warna latar belakang blok kod */
+    --text-primary: #c9d1d9;   /* Warna teks utama */
+    --text-muted: #8b949e;     /* Warna teks pudar */
+    --accent: #58a6ff;         /* Biru JetBrains - Warna Aksen */
+    --success: #238636;        /* Hijau - Status Aktif */
+    --border: #30363d;         /* Warna sempadan */
+    --terminal-green: #00ff00; /* Warna terminal klasik */
+}
+
+/* Tetapan Asas */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    letter-spacing: -0.02em;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header & Navigasi */
+header {
+    border-bottom: 1px solid var(--border);
+    padding: 60px 0 20px 0;
+    text-align: left;
+}
+
+header h1 {
+    color: var(--accent);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.status {
+    color: var(--success);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 10px;
+    display: block;
+}
+
+.status::before {
+    content: "● ";
+}
+
+/* Tipografi & Kandungan */
+h2 {
+    color: var(--accent);
+    font-size: 1.1rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: "– ";
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+strong {
+    color: var(--accent);
+}
+
+/* Jadual (Tables) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 0.85rem;
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--bg-code);
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: rgba(88, 166, 255, 0.05);
+}
+
+/* Blok Kod & Terminal */
+pre {
+    background-color: var(--bg-code);
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    overflow-x: auto;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+}
+
+.terminal-box {
+    background-color: #000;
+    color: var(--terminal-green);
+    padding: 25px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    margin-top: 50px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.terminal-box p {
+    margin: 5px 0;
+}
+
+.blink {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    background-color: var(--terminal-green);
+    animation: cursor-blink 1s step-end infinite;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+@keyframes cursor-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    padding: 40px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.1rem;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
