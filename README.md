@@ -70,7 +70,7 @@ Kami menjemput para pembangun perisian (developers), pakar ekonomi, dan penganal
 
 ```bash
 $ git clone https://github.com
-$ cd project_init_daulat
+$ cd Kedaulatan-Milik-Negara-dan-Rakyat
 $ run simulation --year 2076
 ```
 
