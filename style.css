@@ -90,6 +90,39 @@ strong {
     color: var(--accent);
 }
 
+/* GAYA BUTANG MUAT TURUN (TECHY & MINIMALIST) */
+.download-container {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+.btn {
+    padding: 6px 18px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    color: var(--bg-dark);
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.4);
+}
+
 /* Jadual (Tables) */
 table {
     width: 100%;
@@ -175,5 +208,9 @@ footer {
     table {
         display: block;
         overflow-x: auto;
+    }
+
+    .download-container {
+        gap: 10px;
     }
 }
