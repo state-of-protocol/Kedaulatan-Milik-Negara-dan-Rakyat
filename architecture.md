@@ -1,6 +1,6 @@
 # 🏛️ ARCHITECTURE: THE GUARDIAN PROTOCOL
 > **DECENTRALIZED AUTONOMOUS SOVEREIGN FUND (DASF)**
-> **Technical Stack: Blockchain Ledger + AI Investment Engine**
+> **Technical Stack: Blockchain Ledger + AI Investment Engine + Git-Payment**
 
 ---
 
@@ -36,7 +36,21 @@ A.I. bertindak sebagai Pengurus Dana (Fund Manager) yang beroperasi 24/7 tanpa e
 
 ---
 
-## 04_SYSTEM_WORKFLOW (LOGIC FLOW)
+## 04_GIT_PAYMENT_PROTOCOL (FINANCIAL-AS-CODE)
+Mengintegrasikan logik kawalan versi (version control) ke dalam aliran likuiditi negara bagi menjamin jejak audit yang mutlak.
+
+### A. IMMUTABLE LEDGER
+Setiap agihan dana atau transaksi direkodkan sebagai **'Commit'** tetap dalam lejar negara. Setiap pergerakan RM0.01 mempunyai Hash SHA-256 unik yang tidak boleh dipadam.
+
+### B. MERGE APPROVAL (SOVEREIGN LOAN)
+Pinjaman kedaulatan (20-30% protocol) memerlukan pengesahan algoritma dan semakan silang (Review) sebelum dibenarkan untuk **'Merge'** ke dalam akaun persekutuan. Ini menghalang pengeluaran dana secara mengejut tanpa asas data yang kukuh.
+
+### C. ROLLBACK & INTEGRITY PROTECTION
+Menghalang sebarang cubaan manipulasi data lampau. Integriti sistem dijaga melalui rantaian blok (Block-chaining) di mana sebarang perubahan tidak sah pada rekod lama akan membatalkan seluruh 'Branch' kewangan semasa.
+
+---
+
+## 05_SYSTEM_WORKFLOW (LOGIC FLOW)
 
 ```bash
 [SOURCE_INCOME]
@@ -45,18 +59,18 @@ A.I. bertindak sebagai Pengurus Dana (Fund Manager) yang beroperasi 24/7 tanpa e
       v
 [GUARDIAN_POOL] <---- AI_STRATEGY (Optimizes 7% Yield)
       |
-      |-- (3%) --> [SMART_CONTRACT] --> [DIGITAL_WALLET_KIR]
+      |-- (3%) --> [COMMIT: DISBURSEMENT] --> [DIGITAL_WALLET_KIR]
 
-      |-- (2%) --> [FEDERAL_TREASURY] --> [APPROVED_PROJECTS]
-      |-- (1%) --> [LOCAL_COMMUNITY] --> [SOCIAL_WELFARE]
+      |-- (2%) --> [MERGE: FED_TREASURY]  --> [APPROVED_PROJECTS]
+      |-- (1%) --> [BRANCH: STATE_SOCIAL] --> [SOCIAL_WELFARE]
       |
       v
-[BLOCKCHAIN_LEDGER] (Public Verification)
+[BLOCKCHAIN_LEDGER] (Public Verification / git log)
 ```
 
 ---
 
-## 05_GOVERNANCE_MODEL (THE KILL SWITCH)
+## 06_GOVERNANCE_MODEL (THE KILL SWITCH)
 Walaupun sistem ini autonomi, kawalan akhir tetap di tangan kolektif rakyat (Decentralized Governance):
 
 1. **Emergency Vote:** Sebarang perubahan besar pada kod protokol memerlukan undian digital majoriti daripada 8.5 juta KIR.
@@ -64,10 +78,11 @@ Walaupun sistem ini autonomi, kawalan akhir tetap di tangan kolektif rakyat (Dec
 
 ---
 
-## 06_TECHNICAL_SPECIFICATIONS
+## 07_TECHNICAL_SPECIFICATIONS
 - **Consensus Mechanism:** Proof-of-Stake (PoS) untuk kecekapan tenaga.
 - **AI Model:** Transformer-based Deep Learning (Pelaburan) + Neural Networks (Keselamatan).
 - **Encryption:** AES-256 & Quantum-Resistant Algorithms.
+- **Version Control:** Git-Integrity for Transactional Logging.
 
 ---
 **"Kod adalah Undang-undang. Data adalah Kedaulatan."**
